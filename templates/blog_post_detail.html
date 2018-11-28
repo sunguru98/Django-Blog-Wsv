@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body_block %}
+<br><br>
+<div class="post">
+    <h1>{{post.title}}</h1>
+    <br><br>
+    <h2>{{post.body}}</h2>
+</div>
+<br><br>
+<a href="{% url 'blog_app:blog_update' post.pk %}" class="btn btn-warning">Edit Post</a>
+<a href="{% url 'blog_app:blog_delete' post.pk %}" class="btn btn-danger">Delete Post</a>
+{% endblock body_block %}

@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+body h1 {
+    font-family: Roboto, sans-serif;
+    color: red;
+    text-align: center;
+    border-bottom:1px solid #777;   
+}
+.post{color:yellowgreen}
+.post a {
+    padding:20px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.post h1{
+    color:red;
+}
+.post h2,.post h2 a{
+    color:blueviolet;
+}
+.post h2 a:hover {
+    color: blueviolet;
+}

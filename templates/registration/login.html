@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body_block %}
+    {% if user.is_authenticated %}
+        <h1>Logged in ! Please return to home or enter /posts in url</h1>
+    {% else %}
+        <div class="container">
+            <h1>Login</h1>
+            <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }} 
+            <input type="submit" value="Login" class="btn btn-primary">
+            </form>
+        </div>
+    {% endif %}
+{% endblock body_block%}
